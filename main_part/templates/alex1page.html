@@ -1,0 +1,692 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Responsive Bootstrap 4 Admin &amp; Dashboard Template">
+	<meta name="author" content="Bootlab">
+
+	<title>ACADEMIEZ 1.0 EDCUCATION SOFTWARE</title>
+
+	<link rel="canonical" href="https://appstack.bootlab.io/dashboard-default.html" />
+	<link rel="shortcut icon" href="img/favicon.ico">
+
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+	<!-- Choose your prefered color scheme -->
+	<!-- <link href="css/light.css" rel="stylesheet"> -->
+	<!-- <link href="css/dark.css" rel="stylesheet"> -->
+
+	<!-- BEGIN SETTINGS -->
+	<!-- Remove this after purchasing -->
+	<link class="js-stylesheet" href="css/light.css" rel="stylesheet">
+	<script src="js/settings.js"></script>
+	<!-- END SETTINGS -->
+</head>
+<!--
+  HOW TO USE: 
+  data-theme: default (default), dark, light
+  data-layout: fluid (default), boxed
+  data-sidebar-position: left (default), right
+  data-sidebar-behavior: sticky (default), fixed, compact
+-->
+
+<body data-theme="default" data-layout="fluid" data-sidebar-position="left" data-sidebar-behavior="sticky">
+	<div class="wrapper">
+		<nav id="sidebar" class="sidebar">
+			<div class="sidebar-content js-simplebar">
+
+				<ul class="sidebar-nav">
+					<li class="sidebar-item active">
+						<a href="#dashboards" data-toggle="collapse" class="sidebar-link">
+              <i class="align-middle" data-feather="grid"></i><span style="font-family:Times New Roman; font-size: 16px;" class="align-middle">Current Session:2021-2022 Quick Links</span> 
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a href="#documentation" data-toggle="collapse" class="sidebar-link collapsed">
+              <i class="align-middle" data-feather="book-open"></i> <span style="font-family:Times New Roman; font-size: 18px;" class="align-middle">Front Office</span>
+            </a>
+						<ul id="documentation" class="sidebar-dropdown list-unstyled collapse " data-parent="#sidebar">
+							<li class="sidebar-item"><a class="sidebar-link" href="docs-introduction.html">>> Admission Enquiry</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="docs-installation.html">>> Visitor Book</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="docs-customization.html">>> Phone Call Log</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="docs-plugins.html">>> Postal Dispatch</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="docs-changelog.html">>> Postal Receive</a></li>
+								<li class="sidebar-item"><a class="sidebar-link" href="docs-plugins.html">>> Complain</a></li>
+								<li class="sidebar-item"><a class="sidebar-link" href="docs-changelog.html">>> Setup Front Office</a></li>
+						</ul>
+					</li>
+					<li class="sidebar-item">
+						<a href="#auth" data-toggle="collapse" class="sidebar-link collapsed">
+              <i class="align-middle" data-feather="users"></i> <span style="font-family:Times New Roman; font-size: 18px;" class="align-middle">Student Information</span>
+              <span  class="badge badge-sidebar-secondary"></span>
+            </a>
+						<ul id="auth" class="sidebar-dropdown list-unstyled collapse " data-parent="#sidebar">
+							<li class="sidebar-item"><a class="sidebar-link" href="pages-sign-in.html">>> Student Details</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="pages-sign-up.html">>> Student Admission</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="pages-reset-password.html">>> Online Admission</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="pages-404.html">>> Disabled Students</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="pages-500.html">>> Multi Class Student</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="pages-sign-up.html">>> Bulk Delete</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="pages-reset-password.html">>> Student Categories</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="pages-404.html">>> Student House</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="pages-500.html">>> Disable Reason</a></li>
+						</ul>
+					</li>
+					<li class="sidebar-item">
+						<a href="#pages" data-toggle="collapse" class="sidebar-link collapsed">
+              <i class="align-middle" data-feather="layers"></i> <span style="font-family:Times New Roman; font-size: 18px;" class="align-middle">Fees Collection</span>
+            </a>
+						<ul id="pages" class="sidebar-dropdown list-unstyled collapse " data-parent="#sidebar">
+							<li class="sidebar-item"><a class="sidebar-link" href="feesdetails.html">>> Collection fees</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="pages-settings.html">>> Search Fees Payment</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="pages-clients.html">>> Search Due fees</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="pages-profile.html">>> Fees Master</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="pages-settings.html">>> Fees Group</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="pages-clients.html">>> Fees Type</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="pages-profile.html">>> Fees Discount</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="pages-settings.html">>> Fees Carry Forward</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="pages-clients.html">>> Fees Reminder</a></li>
+							<li class="sidebar-item">
+						</ul>
+					</li>
+
+					<li class="sidebar-item">
+						<a href="#multi-1" data-toggle="collapse" class="sidebar-link collapsed">
+              <i class="align-middle" data-feather="dollar-sign"></i><span style="font-family:Times New Roman; font-size: 18px;" class="align-middle">Income</span>
+            </a>
+						<ul id="multi-1" class="sidebar-dropdown list-unstyled collapse">
+							<li class="sidebar-item"><a class="sidebar-link" href="docs-introduction.html">>> Income details</a></li>
+						</ul>
+					</li>
+					<li class="sidebar-item">
+						<a href="#ui" data-toggle="collapse" class="sidebar-link collapsed">
+              <i class="align-middle" data-feather="credit-card"></i> <span style="font-family:Times New Roman; font-size: 18px;" class="align-middle">Expenses</span>
+            </a>
+						<ul id="ui" class="sidebar-dropdown list-unstyled collapse " data-parent="#sidebar">
+							<li class="sidebar-item"><a class="sidebar-link" href="ui-alerts.html">>> Expenses Details </a></li>
+						</ul>
+					</li>
+					<li class="sidebar-item">
+						<a href="#forms" data-toggle="collapse" class="sidebar-link collapsed">
+              <i class="align-middle" data-feather="check-square"></i> <span style="font-family:Times New Roman; font-size: 18px;" class="align-middle">Attendance</span>
+            </a>
+						<ul id="forms" class="sidebar-dropdown list-unstyled collapse " data-parent="#sidebar">
+							<li class="sidebar-item"><a class="sidebar-link" href="forms-layouts.html">>> Student Attendence</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="forms-basic-inputs.html">>> Student Approved leave</a></li>
+						</ul>
+					</li>
+					<li class="sidebar-item">
+						<a href="#form-plugins" data-toggle="collapse" class="sidebar-link collapsed">
+              <i class="align-middle" data-feather="map"></i> <span style="font-family:Times New Roman; font-size: 18px;" class="align-middle">Examinations</span>
+            </a>
+						<ul id="form-plugins" class="sidebar-dropdown list-unstyled collapse " data-parent="#sidebar">
+							<li class="sidebar-item"><a class="sidebar-link" href="forms-advanced-inputs.html">>> Exam Group list </a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="forms-editors.html">>> Exam list </a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="forms-validation.html">>> Exam Schedule</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="forms-wizard.html">>> Result Based Selection</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="forms-wizard.html">>> Marks Grade</a></li>
+						</ul>
+					</li>
+					<li class="sidebar-item">
+						<a href="#datatables" data-toggle="collapse" class="sidebar-link collapsed">
+              <i class="align-middle" data-feather="rss"></i> <span style="font-family:Times New Roman; font-size: 18px;" class="align-middle">Online Examinations</span>
+            </a>
+						<ul id="datatables" class="sidebar-dropdown list-unstyled collapse " data-parent="#sidebar">
+							<li class="sidebar-item"><a class="sidebar-link" href="tables-datatables-responsive.html">>> End Semester</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="tables-datatables-buttons.html">>> Semester</a></li>
+						</ul>
+					</li>
+
+					<li class="sidebar-item">
+						<a href="#charts" data-toggle="collapse" class="sidebar-link collapsed">
+              <i class="align-middle" data-feather="sidebar"></i> <span style="font-family:Times New Roman; font-size: 18px;" class="align-middle">Lesson Plan</span>
+              <span class="badge badge-sidebar-primary"></span>
+            </a>
+						<ul id="charts" class="sidebar-dropdown list-unstyled collapse " data-parent="#sidebar">
+							<li class="sidebar-item"><a class="sidebar-link" href="charts-chartjs.html">>> Planning lesson</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="charts-chartjs.html">>> Understanding</a></li>
+						</ul>
+					</li>
+					</li>
+					<li class="sidebar-item">
+						<a href="#maps" data-toggle="collapse" class="sidebar-link collapsed">
+              <i class="align-middle" data-feather="award"></i> <span style="font-family:Times New Roman; font-size: 18px;" class="align-middle">Academics</span>
+            </a>
+						<ul id="maps" class="sidebar-dropdown list-unstyled collapse " data-parent="#sidebar">
+							<li class="sidebar-item"><a class="sidebar-link" href="maps-google.html">>> Class Timetable</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="maps-vector.html">>> Teachers Timetable</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="maps-vector.html">>> Assign Class Teacher </a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="maps-vector.html">>> Prom Students</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="maps-vector.html">>> Subject Group</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="maps-vector.html">>> Subject</a></li>
+						</ul>
+					</li>
+						<li class="sidebar-item">
+							<a href="#multi-2" data-toggle="collapse" class="sidebar-link collapsed">
+					<i class="align-middle" data-feather="briefcase"></i><span style="font-family:Times New Roman; font-size: 18px;" class="align-middle">Human Resource</span>	
+			</a>
+							<ul id="multi-2" class="sidebar-dropdown list-unstyled collapse " data-parent="#sidebar">
+								<li class="sidebar-item"><a class="sidebar-link" href="maps-google.html">>> Staff Directory</a></li>
+								<li class="sidebar-item"><a class="sidebar-link" href="maps-google.html">>> Staff Attendance</a></li>
+								<li class="sidebar-item"><a class="sidebar-link" href="maps-google.html">>> Payroll</a></li>
+								<li class="sidebar-item"><a class="sidebar-link" href="maps-google.html">>> Approve Leave Request</a></li>
+								</li>
+							</ul>
+						</li>
+						<li class="sidebar-item">
+							<a href="#multi-3" data-toggle="collapse" class="sidebar-link collapsed">
+					<i class="align-middle" data-feather="voicemail"></i><span style="font-family:Times New Roman; font-size: 18px;" class="align-middle">Communicate</span>
+                </a>
+							<ul id="multi-3" class="sidebar-dropdown list-unstyled collapse " data-parent="#sidebar">
+								<li class="sidebar-item"><a class="sidebar-link" href="maps-google.html">>> Verbal communicate</a></li>
+								<li class="sidebar-item"><a class="sidebar-link" href="maps-google.html">>> Listening</a></li>
+							</ul>
+						</li>
+							
+							<li class="sidebar-item">
+								<a href="#multi-3-1" data-toggle="collapse" class="sidebar-link collapsed">
+									<i class="align-middle" data-feather="book"></i><span style="font-family:Times New Roman; font-size: 18px;" class="align-middle">Library</span>
+					</a>
+								<ul id="multi-3-1" class="sidebar-dropdown list-unstyled collapse " data-parent="#sidebar">
+									<li class="sidebar-item"><a class="sidebar-link" href="maps-google.html">>> Library Book</a></li>
+								</ul>
+							</li>
+							<li class="sidebar-item">
+								<a href="#forms-1" data-toggle="collapse" class="sidebar-link collapsed">
+						<i class="align-middle" data-feather="video"></i> <span style="font-family:Times New Roman; font-size: 18px;" class="align-middle">Gmeet Live Classes</span>
+					</a>
+								<ul id="forms-1" class="sidebar-dropdown list-unstyled collapse " data-parent="#sidebar">
+									<li class="sidebar-item"><a class="sidebar-link" href="forms-layouts.html">>> Google Meet</a></li>
+									<li class="sidebar-item"><a class="sidebar-link" href="forms-basic-inputs.html">>> Online Class</a></li>
+								</ul>
+							</li>
+		
+							<li class="sidebar-item">
+								<a href="#datatables-1" data-toggle="collapse" class="sidebar-link collapsed">
+						<i class="align-middle" data-feather="download"></i> <span style="font-family:Times New Roman; font-size: 18px;" class="align-middle">Download Center</span>
+					</a>
+								<ul id="datatables-1" class="sidebar-dropdown list-unstyled collapse " data-parent="#sidebar">
+									<li class="sidebar-item"><a class="sidebar-link" href="tables-datatables-responsive.html">>> Attendance Certificate</a></li>
+									<li class="sidebar-item"><a class="sidebar-link" href="tables-datatables-buttons.html">>> Bonafide Certificate</a></li>
+								</ul>
+							</li>
+		
+							<li class="sidebar-item">
+								<a href="#pages-1" data-toggle="collapse" class="sidebar-link collapsed">
+					  <i class="align-middle" data-feather="edit"></i> <span style="font-family:Times New Roman; font-size: 18px;" class="align-middle">Feedback</span>
+					</a>
+								<ul id="pages-1" class="sidebar-dropdown list-unstyled collapse " data-parent="#sidebar">
+									<li class="sidebar-item"><a class="sidebar-link" href="pages-profile.html">>> students</a></li>
+									<li class="sidebar-item"><a class="sidebar-link" href="pages-settings.html">>> Teacher</a></li>
+								</ul>
+							</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<div class="main">
+			<nav class="navbar navbar-expand navbar-light navbar-bg">
+				<a class="sidebar-toggle">
+          <i class="hamburger align-self-center"></i>
+        </a>
+
+				<form class="d-none d-sm-inline-block">
+					<div class="input-group input-group-navbar">
+						<input type="text" class="form-control" placeholder="Search projects…" aria-label="Search">
+						<div class="input-group-append">
+							<button class="btn" type="button">
+                <i class="align-middle" data-feather="search"></i>
+              </button>
+						</div>
+					</div>
+				</form>
+
+				<ul class="navbar-nav">
+					<li class="nav-item px-2 dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Mega menu
+            </a>
+						<div class="dropdown-menu dropdown-menu-left dropdown-mega" aria-labelledby="servicesDropdown">
+							<div class="d-md-flex align-items-start justify-content-start">
+								<div class="dropdown-mega-list">
+									<div class="dropdown-header">UI Elements</div>
+									<a class="dropdown-item" href="#">Alerts</a>
+									<a class="dropdown-item" href="#">Buttons</a>
+									<a class="dropdown-item" href="#">Cards</a>
+									<a class="dropdown-item" href="#">Carousel</a>
+									<a class="dropdown-item" href="#">General</a>
+									<a class="dropdown-item" href="#">Grid</a>
+									<a class="dropdown-item" href="#">Modals</a>
+									<a class="dropdown-item" href="#">Tabs</a>
+									<a class="dropdown-item" href="#">Typography</a>
+								</div>
+								<div class="dropdown-mega-list">
+									<div class="dropdown-header">Forms</div>
+									<a class="dropdown-item" href="#">Layouts</a>
+									<a class="dropdown-item" href="#">Basic Inputs</a>
+									<a class="dropdown-item" href="#">Input Groups</a>
+									<a class="dropdown-item" href="#">Advanced Inputs</a>
+									<a class="dropdown-item" href="#">Editors</a>
+									<a class="dropdown-item" href="#">Validation</a>
+									<a class="dropdown-item" href="#">Wizard</a>
+								</div>
+								<div class="dropdown-mega-list">
+									<div class="dropdown-header">Tables</div>
+									<a class="dropdown-item" href="#">Basic Tables</a>
+									<a class="dropdown-item" href="#">Responsive Table</a>
+									<a class="dropdown-item" href="#">Table with Buttons</a>
+									<a class="dropdown-item" href="#">Column Search</a>
+									<a class="dropdown-item" href="#">Muulti Selection</a>
+									<a class="dropdown-item" href="#">Ajax Sourced Data</a>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+
+				<div class="navbar-collapse collapse">
+					<ul class="navbar-nav navbar-align">
+						<li class="nav-item dropdown">
+							<a class="nav-icon dropdown-toggle" href="#" id="messagesDropdown" data-toggle="dropdown">
+								<div class="position-relative">
+									<i class="align-middle" data-feather="message-circle"></i>
+									<span class="indicator">4</span>
+								</div>
+							</a>
+							<div class="dropdown-menu dropdown-menu-lg dropdown-menu-right py-0" aria-labelledby="messagesDropdown">
+								<div class="dropdown-menu-header">
+									<div class="position-relative">
+										4 New Messages
+									</div>
+								</div>
+								<div class="list-group">
+									<a href="#" class="list-group-item">
+										<div class="row no-gutters align-items-center">
+											<div class="col-2">
+												<img src="img/avatars/avatar-5.jpg" class="avatar img-fluid rounded-circle" alt="Ashley Briggs">
+											</div>
+											<div class="col-10 pl-2">
+												<div class="text-dark">Ashley Briggs</div>
+												<div class="text-muted small mt-1">Nam pretium turpis et arcu. Duis arcu tortor.</div>
+												<div class="text-muted small mt-1">15m ago</div>
+											</div>
+										</div>
+									</a>
+									<a href="#" class="list-group-item">
+										<div class="row no-gutters align-items-center">
+											<div class="col-2">
+												<img src="img/avatars/avatar-2.jpg" class="avatar img-fluid rounded-circle" alt="Carl Jenkins">
+											</div>
+											<div class="col-10 pl-2">
+												<div class="text-dark">Carl Jenkins</div>
+												<div class="text-muted small mt-1">Curabitur ligula sapien euismod vitae.</div>
+												<div class="text-muted small mt-1">2h ago</div>
+											</div>
+										</div>
+									</a>
+									<a href="#" class="list-group-item">
+										<div class="row no-gutters align-items-center">
+											<div class="col-2">
+												<img src="img/avatars/avatar-4.jpg" class="avatar img-fluid rounded-circle" alt="Stacie Hall">
+											</div>
+											<div class="col-10 pl-2">
+												<div class="text-dark">Stacie Hall</div>
+												<div class="text-muted small mt-1">Pellentesque auctor neque nec urna.</div>
+												<div class="text-muted small mt-1">4h ago</div>
+											</div>
+										</div>
+									</a>
+									<a href="#" class="list-group-item">
+										<div class="row no-gutters align-items-center">
+											<div class="col-2">
+												<img src="img/avatars/avatar-3.jpg" class="avatar img-fluid rounded-circle" alt="Bertha Martin">
+											</div>
+											<div class="col-10 pl-2">
+												<div class="text-dark">Bertha Martin</div>
+												<div class="text-muted small mt-1">Aenean tellus metus, bibendum sed, posuere ac, mattis non.</div>
+												<div class="text-muted small mt-1">5h ago</div>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="dropdown-menu-footer">
+									<a href="#" class="text-muted">Show all messages</a>
+								</div>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-icon dropdown-toggle" href="#" id="alertsDropdown" data-toggle="dropdown">
+								<div class="position-relative">
+									<i class="align-middle" data-feather="bell-off"></i>
+								</div>
+							</a>
+							<div class="dropdown-menu dropdown-menu-lg dropdown-menu-right py-0" aria-labelledby="alertsDropdown">
+								<div class="dropdown-menu-header">
+									4 New Notifications
+								</div>
+								<div class="list-group">
+									<a href="#" class="list-group-item">
+										<div class="row no-gutters align-items-center">
+											<div class="col-2">
+												<i class="text-danger" data-feather="alert-circle"></i>
+											</div>
+											<div class="col-10">
+												<div class="text-dark">Update completed</div>
+												<div class="text-muted small mt-1">Restart server 12 to complete the update.</div>
+												<div class="text-muted small mt-1">2h ago</div>
+											</div>
+										</div>
+									</a>
+									<a href="#" class="list-group-item">
+										<div class="row no-gutters align-items-center">
+											<div class="col-2">
+												<i class="text-warning" data-feather="bell"></i>
+											</div>
+											<div class="col-10">
+												<div class="text-dark">Lorem ipsum</div>
+												<div class="text-muted small mt-1">Aliquam ex eros, imperdiet vulputate hendrerit et.</div>
+												<div class="text-muted small mt-1">6h ago</div>
+											</div>
+										</div>
+									</a>
+									<a href="#" class="list-group-item">
+										<div class="row no-gutters align-items-center">
+											<div class="col-2">
+												<i class="text-primary" data-feather="home"></i>
+											</div>
+											<div class="col-10">
+												<div class="text-dark">Login from 192.186.1.1</div>
+												<div class="text-muted small mt-1">8h ago</div>
+											</div>
+										</div>
+									</a>
+									<a href="#" class="list-group-item">
+										<div class="row no-gutters align-items-center">
+											<div class="col-2">
+												<i class="text-success" data-feather="user-plus"></i>
+											</div>
+											<div class="col-10">
+												<div class="text-dark">New connection</div>
+												<div class="text-muted small mt-1">Anna accepted your request.</div>
+												<div class="text-muted small mt-1">12h ago</div>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="dropdown-menu-footer">
+									<a href="#" class="text-muted">Show all notifications</a>
+								</div>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-flag dropdown-toggle" href="#" id="languageDropdown" data-toggle="dropdown">
+                <img src="img/flags/us.png" alt="English" />
+              </a>
+							<div class="dropdown-menu dropdown-menu-right" aria-labelledby="languageDropdown">
+								<a class="dropdown-item" href="#">
+                  <img src="img/flags/us.png" alt="English" width="20" class="align-middle mr-1" />
+                  <span class="align-middle">English</span>
+                </a>
+								<a class="dropdown-item" href="#">
+                  <img src="img/flags/es.png" alt="Spanish" width="20" class="align-middle mr-1" />
+                  <span class="align-middle">Spanish</span>
+                </a>
+								<a class="dropdown-item" href="#">
+                  <img src="img/flags/de.png" alt="German" width="20" class="align-middle mr-1" />
+                  <span class="align-middle">German</span>
+                </a>
+								<a class="dropdown-item" href="#">
+                  <img src="img/flags/nl.png" alt="Dutch" width="20" class="align-middle mr-1" />
+                  <span class="align-middle">Dutch</span>
+                </a>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-icon dropdown-toggle d-inline-block d-sm-none" href="#" data-toggle="dropdown">
+                <i class="align-middle" data-feather="settings"></i>
+              </a>
+
+							<a class="nav-link dropdown-toggle d-none d-sm-inline-block" href="#" data-toggle="dropdown">
+                <img src="img/avatars/avatar.jpg" class="avatar img-fluid rounded-circle mr-1" alt="Chris Wood" /> <span class="text-dark">Chris Wood</span>
+              </a>
+							<div class="dropdown-menu dropdown-menu-right">
+								<a class="dropdown-item" href="pages-profile.html"><i class="align-middle mr-1" data-feather="user"></i> Profile</a>
+								<a class="dropdown-item" href="#"><i class="align-middle mr-1" data-feather="pie-chart"></i> Analytics</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="pages-settings.html">Settings & Privacy</a>
+								<a class="dropdown-item" href="#">Help</a>
+								<a class="dropdown-item" href="#">Sign out</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</nav>
+
+
+
+			<main class="content">
+				<div class="container-fluid p-0">
+
+					<h1 class="h3 mb-3">Admission Enquiry</h1>
+
+					<div class="card flex-fill">
+						<div class="card-header">
+							<div class="card-actions float-right">
+								<div class="dropdown show">
+									<a href="#" data-toggle="dropdown" data-display="static">
+          <i class="align-middle" data-feather="#"></i>
+        </a>
+
+									<div button type="button" class="btn btn-secondary">+Add</button> >
+										
+									</div>
+								</div>
+							</div>
+							<h5 class="card-title mb-0">Search...</h5>
+						</div>
+						<table class="table table-bordered">
+							<thead>
+							  <tr class="table table-dark text-danger">
+								  <th>Name</th>
+								  <th>D.No</th>
+								  <th>Email</th>
+								  <th>DOB</th>
+								  <th>Departments</th>
+								  <th>Phone Number</th>
+								  <th>Status</th>
+								  <th>Actions</th>
+								</tr>
+							  </thead>
+							  <tbody>
+								<tr>
+									<td>Alex</td>
+									<td>19PCA116</td>
+									<td>alex12@gmail.com</td>
+									<td>20-06-1999</td>
+									<td>Computer Science</td>
+									<td>7843456435</td>
+									<td>Active</td>
+									<td class="table-action">
+										<a href="#"><i class="align-middle" data-feather="edit-2"></i></a>
+										<a href="#"><i class="align-middle" data-feather="trash"></i></a>
+									</td>
+								</tr>      
+								<tr>
+									<td>Alex</td>
+									<td>19PCA116</td>
+									<td>alex12@gmail.com</td>
+									<td>20-06-1999</td>
+									<td>Computer Science</td>
+									<td>7843456435</td>
+									<td>Active</td>
+									<td class="table-action">
+										<a href="#"><i class="align-middle" data-feather="edit-2"></i></a>
+										<a href="#"><i class="align-middle" data-feather="trash"></i></a>
+									</td>
+								</tr>
+								<tr>
+									<td>Alex</td>
+									<td>19PCA116</td>
+									<td>alex12@gmail.com</td>
+									<td>20-06-1999</td>
+									<td>Computer Science</td>
+									<td>7843456435</td>
+									<td>Active</td>
+									<td class="table-action">
+										<a href="#"><i class="align-middle" data-feather="edit-2"></i></a>
+										<a href="#"><i class="align-middle" data-feather="trash"></i></a>
+									</td>
+								</tr>
+								<tr>
+									<td>Alex</td>
+									<td>19PCA116</td>
+									<td>alex12@gmail.com</td>
+									<td>20-06-1999</td>
+									<td>Computer Science</td>
+									<td>7843456435</td>
+									<td>Active</td>
+									<td class="table-action">
+										<a href="#"><i class="align-middle" data-feather="edit-2"></i></a>
+										<a href="#"><i class="align-middle" data-feather="trash"></i></a>
+									</td>
+								</tr>
+								<tr>
+									<td>Alex</td>
+									<td>19PCA116</td>
+									<td>alex12@gmail.com</td>
+									<td>20-06-1999</td>
+									<td>Computer Science</td>
+									<td>7843456435</td>
+									<td>Active</td>
+									<td class="table-action">
+										<a href="#"><i class="align-middle" data-feather="edit-3"></i></a>
+										<a href="#"><i class="align-middle" data-feather="trash"></i></a>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</main>
+		</div>
+	</div>
+
+	<script src="js/app.js"></script>
+
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			// Bar chart
+			new Chart(document.getElementById("chartjs-dashboard-bar"), {
+				type: "bar",
+				data: {
+					labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+					datasets: [{
+						label: "Last year",
+						backgroundColor: window.theme.primary,
+						borderColor: window.theme.primary,
+						hoverBackgroundColor: window.theme.primary,
+						hoverBorderColor: window.theme.primary,
+						data: [54, 67, 41, 55, 62, 45, 55, 73, 60, 76, 48, 79],
+						barPercentage: .325,
+						categoryPercentage: .5
+					}, {
+						label: "This year",
+						backgroundColor: window.theme["primary-light"],
+						borderColor: window.theme["primary-light"],
+						hoverBackgroundColor: window.theme["primary-light"],
+						hoverBorderColor: window.theme["primary-light"],
+						data: [69, 66, 24, 48, 52, 51, 44, 53, 62, 79, 51, 68],
+						barPercentage: .325,
+						categoryPercentage: .5
+					}]
+				},
+				options: {
+					maintainAspectRatio: false,
+					cornerRadius: 15,
+					legend: {
+						display: false
+					},
+					scales: {
+						yAxes: [{
+							gridLines: {
+								display: false
+							},
+							stacked: false,
+							ticks: {
+								stepSize: 20
+							},
+							stacked: true,
+						}],
+						xAxes: [{
+							stacked: false,
+							gridLines: {
+								color: "transparent"
+							},
+							stacked: true,
+						}]
+					}
+				}
+			});
+		});
+	</script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			$("#datetimepicker-dashboard").datetimepicker({
+				inline: true,
+				sideBySide: false,
+				format: "L"
+			});
+		});
+	</script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			// Pie chart
+			new Chart(document.getElementById("chartjs-dashboard-pie"), {
+				type: "pie",
+				data: {
+					labels: ["Direct", "Affiliate", "E-mail", "Other"],
+					datasets: [{
+						data: [2602, 1253, 541, 1465],
+						backgroundColor: [
+							window.theme.primary,
+							window.theme.warning,
+							window.theme.danger,
+							"#E8EAED"
+						],
+						borderWidth: 5,
+						borderColor: window.theme.white
+					}]
+				},
+				options: {
+					responsive: !window.MSInputMethodContext,
+					maintainAspectRatio: false,
+					cutoutPercentage: 70,
+					legend: {
+						display: false
+					}
+				}
+			});
+		});
+	</script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			$("#datatables-dashboard-projects").DataTable({
+				pageLength: 6,
+				lengthChange: false,
+				bFilter: false,
+				autoWidth: false
+			});
+		});
+	</script>
+
+</body>
+
+</html>
