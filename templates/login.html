@@ -1,0 +1,71 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Responsive Bootstrap 4 Admin &amp; Dashboard Template">
+	<meta name="author" content="Bootlab">
+
+	<title>ACADEMIEZ1.0 (Education Software)</title>
+
+	<link rel="canonical" href="https://appstack.bootlab.io/pages-sign-up.html" />
+	<link rel="shortcut icon" href="../STATIC/Authentication/img/favicon.ico">
+
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="{% static 'dashboard/css/style.css' %}">
+</head>
+<body>
+    <div class="registration-form">
+       
+       
+        <form action="login_form_submission" method="POST">
+            {% csrf_token %}
+        
+            <div class="form-icon">
+                <img src="{% static 'Landing/icon/education.png' %}" alt="" class="responsive-img valign profile-image-login">
+            </div>
+            <div class="first">
+                <h2 style="text-align: center; color: rgb(245, 126, 16);" ><i style="font-family:Times New Roman; font-size: 36px;font-variant: small-caps;
+                    text-shadow: 2px 2px #27e046;
+                    font-family: 'Playfair Display', serif;">LogIn</i></h2>
+            </div>
+            
+            {% for i in messages %}
+            {% if 'registered' in i.tags %}
+            <h3 style="color:#27e046;">{{i}}</h3>
+            {% endif %}
+            {% endfor %}
+             
+
+            {% for j in messages %}
+            {% if 'failed_login' in j.tags %}
+            <h5 style="color:red;">{{j}}</h5>
+            {% endif %}
+            {% endfor %}
+    
+    
+            <div class="form-group">
+                <label class="col-form-label col-sm-10 text-sm-left"><i style="font-family:Times New Roman; font-size: 18px;">Username:</label></i>
+                <input type="text" class="form-control item" name="Email_id" id="username" placeholder="username">
+            </div>
+            <div class="form-group">
+                <label class="col-form-label col-sm-10 text-sm-left"><i style="font-family:Times New Roman; font-size: 18px;">Password:</label></i>
+                <input type="password" class="form-control item" name="password" id="password" placeholder="Password">
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-block create-account"><i style="font-family:Times New Roman; font-size: 25px;">Login</button></a></i>
+            </div>
+            <h5 style="text-align: center;"><a href=/register>Do'n have account?</h5></a>
+            <h5 style="text-align: center;"><a href=/index>Home</h5></a>
+        </form>
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+    <script src="{% static 'Landing/js/script.js' %}"></script>
+</body>
+</html>
