@@ -1,0 +1,3 @@
+aws ecr get-login-password --region ap-south-1 | docker login --username AWS --password-stdin 377977679082.dkr.ecr.ap-south-1.amazonaws.com
+docker tag college:latest 377977679082.dkr.ecr.ap-south-1.amazonaws.com/python/college:latest
+docker push 377977679082.dkr.ecr.ap-south-1.amazonaws.com/python/college:latest
